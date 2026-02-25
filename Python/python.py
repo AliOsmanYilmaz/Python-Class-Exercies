@@ -72,36 +72,29 @@ while a != 0:
                     case 1:
                         name = input("Name: ")
                         dog1.name = name  
-                        break  
+
                     case 2:
                         age = int(input("Age: "))
                         dog1.age = age
-                        break
 
                     case 3:
                         eyeColor = input("Eye color: ")
                         dog1.eyeColor = eyeColor
-                        break
 
                     case 4:
                         print("Dog Name : ",dog1.name)
-                        break
 
                     case 5:
                         print("Dog Age : ",dog1.age) 
-                        break   
 
                     case 6:
                         print("Eye color : ",dog1.eyeColor)   
-                        break 
 
                     case 7:
                         print("Dog says",dog1.sound())  
-                        break
 
                     case _:
                         print("Wrong choice")   
-                        break   
 
 
         case 2:
@@ -123,45 +116,36 @@ while a != 0:
                 except ValueError:
                     print("Please enter a number (between 0-6).")
                     continue
-
-            match b:
-                case 1:
-                    name = input("Name: ")
-                    cat1.name = name
-                    break
                 
-                case 2:
-                    age = int(input("Age: "))
-                    cat1.age = age
-                    break
+                match b:
+                    case 1:
+                        name = input("Name: ")
+                        cat1.name = name
 
-                case 3:
-                    eyeColor = input("Eye color: ")
-                    cat1.eyeColor = eyeColor
-                    break
+                    case 2:
+                        age = int(input("Age: "))
+                        cat1.age = age
 
-                case 4:
-                    print("Cat Name : ",cat1.name)
-                    break
+                    case 3:
+                        eyeColor = input("Eye color: ")
+                        cat1.eyeColor = eyeColor
 
-                case 5:
-                    print("Cat Age : ",cat1.age) 
-                    break   
+                    case 4:
+                        print("Cat Name : ",cat1.name)
 
-                case  6:
-                    print("Eye color : ",cat1.eyeColor)    
-                    break
+                    case 5:
+                        print("Cat Age : ",cat1.age) 
 
-                case 7:
-                    print("Cat says",cat1.sound())  
-                    break
+                    case 6:
+                        print("Eye color : ",cat1.eyeColor)    
 
-                case _:
-                    print("Wrong choice")  
-                    break
+                    case 7:
+                        print("Cat says",cat1.sound())  
+
+                    case _:
+                        print("Wrong choice")  
 
 
         case _:
             print("Wrong choice.")
     
-       
